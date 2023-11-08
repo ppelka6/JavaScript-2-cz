@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Lista czynności do wykonania</title>
+    <script>
+        function countListItems() {
+            var olElement = document.getElementById("toDoList");
+            var count = 0;
+            for (var i = 0; i < olElement.childNodes.length; i++) {
+                if (olElement.childNodes[i].nodeType == 1) count++;
+            }
+            alert("Lista uporządkowana zawiera następującą liczbę elementów: " + count)
+        }
+        window.onload = countListItems;
+    </script>
+</head>
+
+<body>
+    <h1> Reczy do zrobienia </h1>
+    <ol id="toDoList">
+        <li> Skoszenie trawy. </li>
+        <li> Umycie okien. </li>
+        <li> Odpisanie na wiadomość email. </li>
+    </ol>
+    <p id="toDoNotes"> Zadbaj o zakończenie wykonania czynności do godziny 20:00 , aby móc obejrzeć teleturniej w
+        telewizji</p>
+</body>
+
+</html>

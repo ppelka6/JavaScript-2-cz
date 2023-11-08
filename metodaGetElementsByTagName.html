@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Lista czynności do wykonania </title>
+    <script>
+        function countListItems() {
+            var olElement = document.getElementById("toDoList");
+            var listItems = olElement.getElementsByTagName("li");
+            alert("Lista uporządkowana zawiera następującą liczbę elementów: " + listItems.length);
+        }
+        window.onload = countListItems;
+    </script>
+</head>
+<body>
+    <h1>Rzeczy do zrobienia</h1>
+    <ol id="toDoList">
+        <li>Skoszenie trawy</li>
+        <li>Umycie okien</li>
+        <li>Odpisanie na wiadomość email </li>
+    </ol>
+      <p id="toDoNotes">Zadbaj o zakończenie wykonania czynności do godziny 20:00, aby móc obejrzeć serial </p>
+</body>
+</html>
